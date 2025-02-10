@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy One Year, Samridhi ❤️</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #fff0f5;
+            color: #d63384;
+            margin: 0;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+        .container {
+            margin-top: 50px;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+            animation: fadeIn 2s ease-in-out;
+        }
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+        .heart {
+            font-size: 50px;
+            animation: heartbeat 1.5s infinite alternate;
+        }
+        @keyframes heartbeat {
+            from { transform: scale(1); }
+            to { transform: scale(1.2); }
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #d63384;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #c2185b;
+        }
+        .hidden {
+            display: none;
+            margin-top: 20px;
+            font-size: 22px;
+            color: #ff3366;
+        }
+        .letter-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+            text-align: left;
+            font-size: 18px;
+            line-height: 1.6;
+            animation: slideIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Happy One Year, Samridhi ❤️</h1>
+        <p>One year of love, laughter, and countless memories!</p>
+        <p class="heart">💖💖💖</p>
+        <button class="btn" onclick="showMessage()">Click for a surprise!</button>
+        <p class="hidden" id="secretMessage">I love you, Madam Ji! ❤️</p>
+        <button class="btn" onclick="playMusic()">Play Music 🎶</button>
+    </div>
+
+    <div class="letter-container">
+        <h2>Dear Samridhi,</h2>
+        <p>One whole year—365 days filled with love, laughter, and you! I still remember the day we started this journey, and now, looking back, I wouldn’t change a single moment. You are my happiness, my safe place, and my forever.</p>
+        <p>From our little moments of joy to the times we’ve held each other close, every second with you is precious. I love the way you smile, the way you make even the smallest things special, and how we’ve built something so beautiful together.</p>
+        <p>Thank you for being the most amazing part of my life. Here’s to a lifetime more of love, adventures, and us.</p>
+        <p>Yours forever,<br>Rohit ❤️</p>
+    </div>
+
+    <audio id="bgMusic">
+        <source src="https://hipstrumentals.com/wp-content/uploads/2024/02/Ed-Sheeran-Perfect-Instrumental-Prod.-By-benny-blanco-Ed-Sheeran-Will-Hicks.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        function showMessage() {
+            document.getElementById("secretMessage").style.display = "block";
+        }
+
+        function playMusic() {
+            let audio = document.getElementById("bgMusic");
+            audio.currentTime = 120; // Start from the middle (2 minutes in)
+            audio.play();
+        }
+    </script>
+
+</body>
+</html>
